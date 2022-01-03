@@ -4,9 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from './components/LandingPage';
+import CCP from './components/CCP'
+import Article from './components/Article'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<App/>}/>
+      <Route path='/ccp' element={<CCP/>}/>
+      <Route path='/home' element={<LandingPage/>}/>
+      <Route path='/ccp/:id' element={<Article/>}/>
+
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
