@@ -7,10 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "starter": "cd client && npm run start",
     "dev":"cd client && npm run dev",
-    "build":"cd client && npm run build",
-    "start":"cd server && node server.js",
-    "install":"cd client && npm install ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "start":"cd server && npm install && npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
