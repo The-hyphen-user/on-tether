@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './components/LandingPage';
 import CCP from './components/CCP'
 import Article from './components/Article'
+import LogIn from './components/LogIn'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,8 @@ ReactDOM.render(
       <Route path='/ccp' element={<CCP/>}/>
       <Route path='/home' element={<LandingPage/>}/>
       <Route path='/ccp/:id' element={<Article/>}/>
+      <Route path='/login' element={<LogIn/>}/>
+
 
     </Routes>
     </BrowserRouter>
